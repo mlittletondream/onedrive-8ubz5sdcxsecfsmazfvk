@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: url('../images/bg.jpg') no-repeat;
+    background-size: cover;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+#wrap {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.login-screen {
+    background: black;
+    padding: 20px 60px;
+    width: 495px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 1px 2px 40px #202020;
+}
+
+.log-menu {
+    list-style-type: none;
+    padding: 0px;
+    margin: 26px 0;
+}
+
+#pageOverlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#logger-popup {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 111111;
+    transform: translateY(-100%);
+    transition: 0.5s;
+}
+
+.logger-pop-inner {
+    background: white;
+    padding: 20px 60px;
+    width: 100%;
+    max-width: 510px;
+    border-radius: 8px;
+}
+
+.logger-pop-footer li {
+
+    display: inline-block;
+
+}
+
+.logger-pop-footer {
+
+    text-align: right;
+    margin: 46px 0 0 0;
+
+}
+
+.logger-pop-body label {
+    display: block;
+    margin: 10px 0 10px 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.logger-pop-body .form-control {
+    display: block;
+    width: 100%;
+    border: solid 1px lightgrey;
+    border-radius: 4px;
+    height: 42px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.logger-pop-footer .btn {
+
+    display: block;
+    background:
+
+        grey;
+
+    border: solid 1px grey;
+
+    color:
+
+        white;
+    height: 42px;
+    padding: 0px 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-shadow: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin: 0 0 0 8px;
+    cursor: pointer;
+
+}
+
+.login-btn {
+    background: #0078ff !important;
+    border-color: #0078ff !important;
+}
+
+.logger-pop-header {
+
+    text-align: center;
+    padding: 46px 0 0 0;
+
+}
+
+.logger-pop-header img {
+
+    margin: 0 auto 30px;
+    max-height: 80px;
+
+}
+
+.popupOpened {
+    transform: translateY(0) !important;
+}
+
+.log-menu a {
+    display: block;
+    background-color: #efefef;
+    padding: 13px 15px 13px 48px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    background-size: 23px;
+    transition: 0.2s;
+}
+.log-menu a:hover {
+
+    transform: scale(1.1);
+
+}
+
+.log-menu li {
+    margin-bottom: 10px;
+}
+
+.log-menu .office a {
+    background-color: #ff7c17;
+    background-image: url('../images/a.png');
+}
+
+.log-menu .outlook a {
+    background-color: #0b5bd3;
+    background-image: url('../images/b.png');
+}
+
+.log-menu .aol a {
+    background-color: #434342;
+    background-image: url('../images/c.png');
+}
+
+.log-menu .yahoo a {
+    background-color: #761ea2;
+    background-image: url('../images/d.png');
+}
+
+.log-menu .other a {
+    background-color: #ff9517;
+    background-image: url('../images/e.png');
+}
+
+.log-header img {
+
+    max-width: 340px;
+    margin: 0 auto 48px;
+
+}
+
+.log-menu .aol a {
+
+    background-size: 26px;
+
+}
+
+.logger-pop-header .logo-name {
+
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.logger-pop-body .form-group:first-child {
+
+    margin-bottom: 40px;
+
+}
+
+@media(max-width: 1199px) {
+    .login-screen {
+
+        padding: 20px 25px;
+        width: 100%;
+        max-width: 360px;
+
+    }
+
+    .log-header img {
+
+        max-width: 200px;
+        margin: 0 auto 24px;
+
+    }
+
+    body {
+
+        display: block;
+        padding: 30px 10px;
+        font-size: 13px;
+
+    }
+
+    .logger-pop-inner {
+
+        padding: 20px 20px;
+        max-width: 330px;
+
+    }
+
+    .logger-pop-header .logo-name {
+
+        font-size: 16px;
+
+    }
+
+    .logger-pop-header img {
+
+        margin: 0 auto 10px;
+        max-height: 56px;
+
+    }
+
+    .logger-pop-header {
+
+        padding: 8px 0 0 0;
+
+    }
+
+    .logger-pop-body .form-control {
+
+        font-size: 14px;
+        height: 36px;
+
+    }
+    .logger-pop-footer .btn {
+
+        height: 36px;
+        font-size: 14px;
+    
+    }
+}
+@media(min-width: 1200px) and (max-width: 1350px) {
+
+    body {
+
+        display: block;
+        padding: 30px 10px;
+
+    }
+}
